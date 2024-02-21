@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ApplicationDevelopmentInCS.Lections.Lection1
 {
-    public class MethodsMein
+    public class MethodsMeinLection1
     {
         ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
         // Лекия 1

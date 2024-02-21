@@ -1,4 +1,5 @@
 ﻿using ApplicationDevelopmentInCS.Lections.Lection1;
+using ApplicationDevelopmentInCS.Seminars.Seminar1;
 
 namespace ApplicationDevelopmentInCS
 {
@@ -8,16 +9,14 @@ namespace ApplicationDevelopmentInCS
 
         static void Main(string[] args)
         {
-            ///////////////////////////////////////////////////////////////////////////////////////////////////////////////
-            
-            // Лекция 2
+            /*// Лекция 1
+            var lec1 = new MethodsMeinLection1();
+            lec1.MethodMain();*/
+
+            var seminar1 = new MethodMainSeminar1();
+            seminar1.MethodMain();
 
 
-            ////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-            
-            // Лекция 1
-            var lec1 = new MethodsMein();
-            lec1.MethodMain();
             
         }
     }

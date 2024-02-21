@@ -1,0 +1,123 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ApplicationDevelopmentInCS.Seminars.Seminar1
+{
+    internal class MethodMainSeminar1
+    {
+        public void MethodMain()
+        {
+            // мои бабушки-дедушки
+            var grandFatherNikolay = new AdultFamilyMember() { Name = "Николай", Gender = Gender.Male, Father = null, Mother = null };
+            var grandMotherTatyana = new AdultFamilyMember() { Name = "Татьяна", Gender = Gender.Female, Father = null, Mother = null };
+
+            var grandFatherMihail = new AdultFamilyMember() { Name = "Михаил", Gender = Gender.Male, Father = null, Mother = null };
+            var grandMotherValentina = new AdultFamilyMember() { Name = "Валентина", Gender = Gender.Female, Father = null, Mother = null };
+
+
+            // мои родители
+            var fatherAlexandr = new AdultFamilyMember() { Name = "Александр", Gender = Gender.Male, Father = grandFatherNikolay, Mother = grandMotherTatyana };
+            var motherEkaterina = new AdultFamilyMember() { Name = "Екатерина", Gender = Gender.Female, Father = grandFatherMihail, Mother = grandMotherValentina };
+
+
+            // Дяди/тети
+            var uncleValery = new AdultFamilyMember() { Name = "Валерий", Gender = Gender.Male, Father = grandFatherNikolay, Mother = grandMotherTatyana };
+
+
+            // мои данные
+            var myself = new AdultFamilyMember() { Name = "Дмитрий", Gender = Gender.Male, Father = fatherAlexandr, Mother = motherEkaterina };
+
+
+            // мои дети
+            var mysonBogdan = new AdultFamilyMember() { Name = "Богдан", Gender = Gender.Male, Father = myself, Mother = null };
+
+            // Братья/сестры  
+            var brotherSergey = new AdultFamilyMember() { Name = "Сергей", Gender = Gender.Male, Father = fatherAlexandr, Mother = motherEkaterina };
+
+
+            // кто кому дети
+            grandFatherNikolay.Children = new FamilyMember[] { fatherAlexandr, uncleValery };
+            grandMotherTatyana.Children = new FamilyMember[] { fatherAlexandr, uncleValery };
+
+            grandFatherMihail.Children = new FamilyMember[] { motherEkaterina };
+            grandMotherValentina.Children = new FamilyMember[] { motherEkaterina };
+
+            fatherAlexandr.Children = new FamilyMember[] { myself, brotherSergey };
+            motherEkaterina.Children = new FamilyMember[] { myself, brotherSergey };
+
+            myself.Children = new FamilyMember[] { mysonBogdan };
+
+
+            myself.InfoBrothersAndSisters();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            /*// мои бабушки-дедушки
+            var grandFatherNikolay = new AdultFamilyMember() { Name = "Николай", Gender = Gender.Male, Father = null, Mother = null };
+            var grandMotherTatyana = new AdultFamilyMember() { Name = "Татьяна", Gender = Gender.Female, Father = null, Mother = null };
+
+            var grandFatherMihail = new AdultFamilyMember() { Name = "Михаил", Gender = Gender.Male, Father = null, Mother = null };
+            var grandMotherValentina = new AdultFamilyMember() { Name = "Валентина", Gender = Gender.Female, Father = null, Mother = null };
+            
+
+            // мои родители
+            var fatherAlexandr = new AdultFamilyMember() { Name = "Александр", Gender = Gender.Male, Father = grandFatherNikolay, Mother = grandMotherTatyana };
+            var motherEkaterina = new AdultFamilyMember() { Name = "Екатерина", Gender = Gender.Female, Father = grandFatherMihail, Mother = grandMotherValentina };
+
+            // Дяди/тети
+            var uncleValery = new AdultFamilyMember() { Name = "Валерий", Gender = Gender.Male, Father = grandFatherNikolay, Mother = grandMotherTatyana };
+
+
+            // мои данные
+            var myself = new FamilyMember() {Name = "Дмитрий", Gender = Gender.Male, Father = fatherAlexandr, Mother = motherEkaterina };
+   
+            
+            // Братья/сестры  
+            var brotherSergey = new FamilyMember() { Name = "Сергей", Gender = Gender.Male, Father = fatherAlexandr, Mother = motherEkaterina };
+
+            // дети
+
+
+
+            // кто кому дети
+            grandFatherNikolay.Children = new FamilyMember[] { fatherAlexandr, uncleValery };
+            grandMotherTatyana.Children = new FamilyMember[] { fatherAlexandr, uncleValery };
+
+            grandFatherMihail.Children = new FamilyMember[] { motherEkaterina };
+            grandMotherValentina.Children = new FamilyMember[] { motherEkaterina };
+
+            fatherAlexandr.Children = new FamilyMember[] { myself, brotherSergey };
+            motherEkaterina.Children = new FamilyMember[] { myself, brotherSergey };*/
+
+
+
+
+
+        }
+
+    }
+}
