@@ -25,12 +25,12 @@ namespace ApplicationDevelopmentInCS.Seminars.Seminar1
 
         public override void InfoBrothersAndSisters() 
         {
-            Console.Write($"{Name}, дети: ");
+            /*Console.Write($"{Name}, дети: ");
             foreach (var child in  Father.Children)
             {
                 Console.Write(child.Name + "," + " ");
             }
-            Console.WriteLine();
+            Console.WriteLine();*/
 
 
 

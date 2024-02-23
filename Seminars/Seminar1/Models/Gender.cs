@@ -4,10 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ApplicationDevelopmentInCS.HomeWorks.Homework1
+namespace ApplicationDevelopmentInCS.Seminars.Seminar1.Models
 {
-    internal class FamilyMember
+    internal enum Gender
     {
-        
+        Male, Female
     }
 }

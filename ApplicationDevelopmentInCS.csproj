@@ -7,4 +7,9 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Folder Include="Seminars\Seminar1\Controllers\" />
+    <Folder Include="Seminars\Seminar1\View\" />
+  </ItemGroup>
+
 </Project>

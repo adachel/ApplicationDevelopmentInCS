@@ -12,8 +12,7 @@ namespace ApplicationDevelopmentInCS.Seminars.Seminar1
         public Gender Gender { get; set; }
         public FamilyMember Father { get; set; }
         public FamilyMember Mother { get; set; }
-
-
+        public DateTime BirthDate { get; internal set; }
 
         public void InfoPerson()    // инфо о члене семьи
         {

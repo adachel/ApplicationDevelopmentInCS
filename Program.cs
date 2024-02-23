@@ -13,7 +13,7 @@ namespace ApplicationDevelopmentInCS
             var lec1 = new MethodsMeinLection1();
             lec1.MethodMain();*/
 
-            var seminar1 = new MethodMainSeminar1();
+            var seminar1 = new MethodMainSem1();
             seminar1.MethodMain();
 
 
