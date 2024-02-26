@@ -41,22 +41,20 @@
                                 son, daughter, daughterSonOne, sonSonOne);
 
 
-            grantFatherFather.ViewSpouse();
-            Console.WriteLine();
+            family.ViewParents(son);
 
-            grantMotherFather.ViewSpouse();
             Console.WriteLine();
-
             son.ViewSpouse();
-            Console.WriteLine(); 
 
+            Console.WriteLine();
+            family.SpouseParents(son);
+
+            Console.WriteLine();
             sonWife.ViewSpouse();
-            Console.WriteLine();
 
-            family.WifeParents(son);
-            Console.WriteLine();
+            family.SpouseParents(sonWife);
 
-            family.WifeParents(sonWife);
+
         }
     }
 }

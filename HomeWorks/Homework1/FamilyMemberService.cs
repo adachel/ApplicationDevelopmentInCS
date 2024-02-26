@@ -11,6 +11,12 @@
             return family;
         }
 
+        public void ViewParents(FamilyMember person)  // родители
+        {
+            Console.WriteLine("Отец: " + person.Father);
+            Console.WriteLine("Мать: " + person.Mother);
+        }
+
         public void ViewGrandFather(FamilyMember person) // дедушки
         {
             Console.WriteLine($"Отцовская ветка: {person.Father?.Father}");
@@ -53,11 +59,10 @@
             }
         }
 
-        public void WifeParents(FamilyMember person)
+        public void SpouseParents(FamilyMember person)
         {
-            var temp = person.Spouse;
-            Console.WriteLine($"Имя супруга(и) - {person.Name}. Отец: " + temp?.Father);
-            Console.WriteLine($"Имя супруга(и) - {person.Name}. Мать: " + temp?.Mother);
+            Console.WriteLine($"Имя супруга(и) - {person.Spouse?.Name}. Отец: " + person.Spouse?.Father);
+            Console.WriteLine($"Имя супруга(и) - {person.Spouse?.Name}. Мать: " + person.Spouse?.Mother);
         }
     }
 }
