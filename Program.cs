@@ -1,10 +1,4 @@
-﻿using ApplicationDevelopmentInCS.HomeWorks.HomeWork1;
-using ApplicationDevelopmentInCS.Lections.Lection2;
-using ApplicationDevelopmentInCS.Lections.Lection2.Fibonachi;
-using ApplicationDevelopmentInCS.Lections.Lection2.Generics;
-using ApplicationDevelopmentInCS.Lections.Lection2.Record;
-using ApplicationDevelopmentInCS.Lections.Lection2.Transformation;
-using ApplicationDevelopmentInCS.Seminars.Seminar2;
+﻿using ApplicationDevelopmentInCS.Seminars.Seminar2;
 
 namespace ApplicationDevelopmentInCS
 {
@@ -22,8 +16,8 @@ namespace ApplicationDevelopmentInCS
             seminar1.Run();*/
 
             ///////////////////////////////////////////////////////////////
-            MethodMainHW1 homework1 = new MethodMainHW1();
-            homework1.Run();
+            /*MethodMainHW1 homework1 = new MethodMainHW1();
+            homework1.Run();*/
 
             ///////////////////////////////////////////////////////////////
             /*MethodMainLec2 lec2 = new MethodMainLec2();
@@ -42,8 +36,8 @@ namespace ApplicationDevelopmentInCS
             methodGenerics.Run();  */
 
             ///////////////////////////////////////////////////////////////////////
-            /*MethodSem2 methodSem2 = new MethodSem2();
-            methodSem2.Run();*/
+            MethodSem2 methodSem2 = new MethodSem2();
+            methodSem2.Run();
 
             /////////////////////////////////////////////////////////////////////
 

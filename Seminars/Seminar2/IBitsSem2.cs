@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Sem2
+namespace ApplicationDevelopmentInCS.Seminars.Seminar2
 {
     // спроектируйте интерфейс для класса способного устанавливать и получать значения отдельных бит в заданном числе.
     // Т.е должен быть какой-то тнтерфейс, у которого должно быть два метода. 

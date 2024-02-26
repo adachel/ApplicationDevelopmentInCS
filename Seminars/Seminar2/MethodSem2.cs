@@ -1,6 +1,4 @@
-﻿using ApplicationDevelopmentInCS.Lections.Lection2.Transformation;
-using Sem2;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -12,33 +10,55 @@ namespace ApplicationDevelopmentInCS.Seminars.Seminar2
     {
         public void Run()
         {
+            var bitsSem2 = new BitsSem2(255);
+            Console.WriteLine("начальное значение: " + bitsSem2.Value);
+            Console.WriteLine();
 
-            /*var newBits = new BitsSem2(55);
-
-            for (int i = 0; i < newBits.Value; i++)
-            {
-                Console.WriteLine(newBits[i]);
-            }
-
-            
-            Console.WriteLine(newBits.Value);*/
-
-
-            IBitsSem2 bitsSem2 = new BitsSem2(99);
-
-            for (int i = 0; i < 10; i++)
-            {
-                Console.WriteLine(bitsSem2.GetBits(i));
-            }
-
-            bitsSem2.SetBits(1, false);
+            // byte явное
+            byte bt = 10;
+            bt = bitsSem2;
+            Console.WriteLine("явное byte: " + bt);
 
             Console.WriteLine();
 
-            for (int i = 0; i < 10; i++)
-            {
-                Console.WriteLine(bitsSem2.GetBits(i));
-            }
+            // byte неявное
+            bt = 10;
+            bitsSem2 = (BitsSem2)bt;
+            Console.WriteLine("не явное byte: " + bitsSem2.Value);
+
+            Console.WriteLine();
+
+            // long явное
+            long lng = 50;
+            lng = bitsSem2;
+            Console.WriteLine("явное long: " + lng);
+
+            Console.WriteLine();
+
+            // long неявное
+            lng = 50;
+            bitsSem2 = (BitsSem2)lng;
+            Console.WriteLine("не явное long: " + bitsSem2.Value);
+
+            Console.WriteLine();
+
+            // int явное
+            int i = 100;
+            i = bitsSem2;
+            Console.WriteLine("явное int: " + i);
+
+            Console.WriteLine();
+
+            // int неявное
+            i = 100;
+            bitsSem2 = (BitsSem2)i;
+            Console.WriteLine("не явное int: " + bitsSem2.Value);
+
+
+            byte bbb = 10;
+            long llll = 50;
+            llll = bbb;
+
 
         }
     }

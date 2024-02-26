@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Sem2
+﻿namespace ApplicationDevelopmentInCS.Seminars.Seminar2
 {
     // спроектируйте интерфейс для класса способного устанавливать и получать значения отдельных бит в заданном числе.
     // Т.е должен быть какой-то интерфейс, у которого должно быть два метода.
@@ -13,14 +7,24 @@ namespace Sem2
     internal class BitsSem2 : IBitsSem2
     {
         public byte Value { get; private set; } = 0;
-        private readonly int size = 0;  // добавили поле для универсальности
+        private readonly int size = 0;
 
 
         public BitsSem2(byte value)
         {
             Value = value;
-            size = sizeof(int); 
+            size = sizeof(byte) * 8;
         }
+
+        public BitsSem2(long value)
+        {
+            Value = (byte)value;
+            size = sizeof(byte) * 8;
+        }
+
+
+
+
 
         public bool GetBits(int index)  // выводит значение по индексу
         {
@@ -33,6 +37,20 @@ namespace Sem2
         }
 
 
+        public static implicit operator byte(BitsSem2 bt) => bt.Value;  // явное преобразование
+        public static explicit operator BitsSem2(byte bt) => new BitsSem2(bt);  // неявное преобразование
+
+        public static implicit operator long(BitsSem2 lng) => lng.Value;  // явное преобразование
+        public static explicit operator BitsSem2(long lng) => new BitsSem2(lng);  // неявное преобразование
+
+        public static implicit operator int(BitsSem2 i) => i.Value;  // явное преобразование
+        public static explicit operator BitsSem2(int i) => new BitsSem2(i);  // неявное преобразование
+
+
+
+
+
+
         // переопределение индексатора
         public bool this[int index]
         {
@@ -42,9 +60,9 @@ namespace Sem2
                 {
                     return false;
                 }
-                return ((Value >> index) & 1) == 1;
+                return (Value >> index & 1) == 1;
             }
-            set 
+            set
             {
                 if (index > size || index < 0)
                 {
@@ -52,7 +70,7 @@ namespace Sem2
                 }
                 if (value == true)
                 {
-                    Value = (byte)(Value | (1 << index));
+                    Value = (byte)(Value | 1 << index);
                 }
                 else
                 {
