@@ -12,7 +12,7 @@
 
         public override string? ToString()
         {
-            return $"Имя - {Name}; Дата рождения - {BirthData}";
+            return $"Имя - {Name}, Дата рождения - {BirthData}";
         }
 
         public void ViewSpouse()
@@ -24,7 +24,7 @@
             }
             else temp = "Жена";
 
-            Console.WriteLine($"Имя - {Name}, {temp} - {Spouse?.Name}");
+            Console.WriteLine($"Имя - {Name}. {temp} - {Spouse?.Name}");
         }
     }
 }

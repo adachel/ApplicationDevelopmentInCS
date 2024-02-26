@@ -40,30 +40,6 @@
             var temp = family.AddPerson(grantFatherFather, grantMotherFather, grantFatherMother, grantMotherMother, father, mother,
                                 son, daughter, daughterSonOne, sonSonOne);
 
-            /*foreach (var person in families.ViewGrandFather(sonOne))
-            {
-                Console.WriteLine(person);
-            }*/
-
-            /*family.ViewGrandFather(son);
-            Console.WriteLine();
-
-            family.ViewGrandMother(son);
-            Console.WriteLine();
-
-            family.ViewGrandFather(daughterSonOne);
-            Console.WriteLine();
-
-            family.ViewGrandMother(daughterSonOne);
-            Console.WriteLine();
-
-            family.GrandOldFather(father);
-            Console.WriteLine();
-
-            family.Oldest(temp);
-            Console.WriteLine();*/
-
-            // Console.WriteLine(family.OldFamilyMember(temp));
 
             grantFatherFather.ViewSpouse();
             Console.WriteLine();
@@ -72,7 +48,10 @@
             Console.WriteLine();
 
             son.ViewSpouse();
+            Console.WriteLine(); 
+
             sonWife.ViewSpouse();
+            Console.WriteLine();
 
             family.WifeParents(son);
             Console.WriteLine();

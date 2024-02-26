@@ -22,8 +22,8 @@ namespace ApplicationDevelopmentInCS
             seminar1.Run();*/
 
             ///////////////////////////////////////////////////////////////
-            /*MethodMainHW1 homework1 = new MethodMainHW1();
-            homework1.Run();*/
+            MethodMainHW1 homework1 = new MethodMainHW1();
+            homework1.Run();
 
             ///////////////////////////////////////////////////////////////
             /*MethodMainLec2 lec2 = new MethodMainLec2();
@@ -39,14 +39,14 @@ namespace ApplicationDevelopmentInCS
             methodRecord.Run();*/
 
             /*MethodGenerics methodGenerics = new MethodGenerics();
-            methodGenerics.Run();  */ 
+            methodGenerics.Run();  */
 
             ///////////////////////////////////////////////////////////////////////
-            MethodSem2 methodSem2 = new MethodSem2();
-            methodSem2.Run();   
+            /*MethodSem2 methodSem2 = new MethodSem2();
+            methodSem2.Run();*/
 
             /////////////////////////////////////////////////////////////////////
-            
+
 
 
 

@@ -4,11 +4,6 @@
     {
         public List<FamilyMember>? Family { get; set; }
 
-        /*public FamilyMemberService()
-        {
-            Family = new List<FamilyMember>();
-        }*/
-
         public List<FamilyMember> AddPerson(params FamilyMember[] person)
         {
             var family = new List<FamilyMember>();
@@ -16,28 +11,6 @@
             return family;
         }
 
-        /*public List<FamilyMember> ViewGrandFather(FamilyMember person)
-        {
-            var grandFathers = new List<FamilyMember>();
-            grandFathers.Add(person.Father.Father);
-            grandFathers.Add(person.Mother.Father);
-            return grandFathers;
-        }*/
-
-        /*public List<FamilyMember> ViewGrandMothers(FamilyMember person)
-        {
-            var grandMothers = new List<FamilyMember>();
-            grandMothers.Add(person.Father.Mother);
-            grandMothers.Add(person.Mother.Mother);
-            return grandMothers;
-        }*/
-
-        /* public FamilyMember OldFamilyMember(List<FamilyMember> family) // самый старший
-         {
-             var data = family.Min(x => x.BirthData);
-             return family.LastOrDefault(x => x.BirthData == data);
-         }
-         */
         public void ViewGrandFather(FamilyMember person) // дедушки
         {
             Console.WriteLine($"Отцовская ветка: {person.Father?.Father}");
@@ -83,8 +56,8 @@
         public void WifeParents(FamilyMember person)
         {
             var temp = person.Spouse;
-            Console.WriteLine($"Имя супруга(и) - {person.Name}, Отец: " + temp?.Father);
-            Console.WriteLine($"Имя супруга(и) - {person.Name}, Мать: " + temp?.Mother);
+            Console.WriteLine($"Имя супруга(и) - {person.Name}. Отец: " + temp?.Father);
+            Console.WriteLine($"Имя супруга(и) - {person.Name}. Мать: " + temp?.Mother);
         }
     }
 }

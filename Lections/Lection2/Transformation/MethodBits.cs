@@ -11,7 +11,7 @@ namespace ApplicationDevelopmentInCS.Lections.Lection2.Transformation
         public void Run() 
         {
             // явное
-            var a = new Bits(20);
+            /*var a = new Bits(20);
 
             byte b = a;
 
@@ -21,7 +21,7 @@ namespace ApplicationDevelopmentInCS.Lections.Lection2.Transformation
 
             a = (Bits)b;
 
-            Console.WriteLine(a.Value);
+            Console.WriteLine(a.Value);*/
         }
     }
 }

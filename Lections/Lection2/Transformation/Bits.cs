@@ -15,7 +15,8 @@ namespace ApplicationDevelopmentInCS.Lections.Lection2.Transformation
             Value = b;
         }
 
-        public static implicit operator byte(Bits b) => b.Value;  // явное преобразование
+
+        public static explicit operator byte(Bits b) => b.Value;  // явное преобразование
         public static implicit operator Bits(byte b) => new Bits(b);  // неявное преобразование
     }
 }
