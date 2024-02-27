@@ -22,7 +22,8 @@ namespace ApplicationDevelopmentInCS.Lections.Lection2
             BirthDate = birthDate;
         }
 
-        public readonly int Height;                  
+
+        public readonly int Height = 0;                  
 
         public PersonLec2 Father = null!;
         public PersonLec2 Mother = null!;

@@ -10,7 +10,7 @@ namespace ApplicationDevelopmentInCS.Lections.Lection2.Generics.Covariant
     {
         public T GetDufault()
         {
-            return default(T);
+            return default(T)!;
         }
     }
 }

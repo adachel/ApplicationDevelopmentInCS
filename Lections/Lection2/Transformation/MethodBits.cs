@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ApplicationDevelopmentInCS.Lections.Lection2.Transformation
 {
-    internal class MethodBitsHW2
+    internal class MethodBits2
     {
         public void Run() 
         {

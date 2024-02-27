@@ -12,7 +12,12 @@ namespace ApplicationDevelopmentInCS.Lections.Lection2.Generics.GenericInterface
         public int Temperature;
         public int Day;
 
-
+        public GeneralizedMetric(int month, int temperature, int day)
+        {
+            Month = month;
+            Temperature = temperature;
+            Day = day;
+        }
 
         public int CompareTo(GeneralizedMetric other)
         {
