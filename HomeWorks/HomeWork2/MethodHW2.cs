@@ -50,6 +50,9 @@ namespace ApplicationDevelopmentInCS.HomeWorks.HomeWork2
             bitsHW2 = (BitsHW2)i;
             Console.WriteLine("явное int: " + bitsHW2.Value);
 
+            i = 200;
+
+            bitsHW2 = (BitsHW2)i; 
         }
     }
 }
