@@ -1,5 +1,6 @@
 ﻿using ApplicationDevelopmentInCS.HomeWorks.HomeWork2;
 using ApplicationDevelopmentInCS.Lections.Lection2.Transformation;
+using ApplicationDevelopmentInCS.Lections.Lection3;
 using ApplicationDevelopmentInCS.Seminars.Seminar2;
 
 namespace ApplicationDevelopmentInCS
@@ -48,9 +49,14 @@ namespace ApplicationDevelopmentInCS
             /////////////////////////////////////////////////////////////////////
             /// Домашняя работа 2
 
-            MethodHW2 methodHW2 = new MethodHW2();
-            methodHW2.Run();    
+            /*MethodHW2 methodHW2 = new MethodHW2();
+            methodHW2.Run();   */
 
+            /////////////////////////////////////////////////////////////////////
+            /// Лекция 3
+
+            MainLec3 mainLec3 = new MainLec3();
+            mainLec3.Run();
 
 
 
