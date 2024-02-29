@@ -25,6 +25,7 @@
             else temp = "Жена";
 
             Console.WriteLine($"Имя - {Name}, {temp} - {Spouse?.Name}");
+            Console.WriteLine($"Имя - {Name}, {temp} - {Spouse?.Name}");
         }
     }
 }*/
