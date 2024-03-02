@@ -1,6 +1,8 @@
 ﻿using ApplicationDevelopmentInCS.HomeWorks.HomeWork2;
+using ApplicationDevelopmentInCS.HomeWorks.HomeWork3;
 using ApplicationDevelopmentInCS.Lections.Lection2.Transformation;
 using ApplicationDevelopmentInCS.Lections.Lection3;
+using ApplicationDevelopmentInCS.Seminars.Seminar_3;
 using ApplicationDevelopmentInCS.Seminars.Seminar2;
 
 namespace ApplicationDevelopmentInCS
@@ -55,12 +57,20 @@ namespace ApplicationDevelopmentInCS
             /////////////////////////////////////////////////////////////////////
             /// Лекция 3
 
-            MainLec3 mainLec3 = new MainLec3();
-            mainLec3.Run();
+            /*MainLec3 mainLec3 = new MainLec3();
+            mainLec3.Run();*/
 
+            /////////////////////////////////////////////////////////////////////
+            // Семинар 3
 
+            /*var mainSem3 = new MainSem3();
+            mainSem3.Run(); */
 
-
+            //////////////////////////////////////////////////////////////////////
+            /// HomeWork 3
+            /// 
+            MainHW3 mainHW3 = new MainHW3();    
+            mainHW3.Run();
 
         }
     }
