@@ -4,6 +4,7 @@ using ApplicationDevelopmentInCS.Lections.Lection2.Transformation;
 using ApplicationDevelopmentInCS.Lections.Lection3;
 using ApplicationDevelopmentInCS.Lections.Lection4;
 using ApplicationDevelopmentInCS.Seminars.Seminar_3;
+using ApplicationDevelopmentInCS.Seminars.Seminar_4;
 using ApplicationDevelopmentInCS.Seminars.Seminar2;
 using System.Runtime.CompilerServices;
 
@@ -77,9 +78,13 @@ namespace ApplicationDevelopmentInCS
             /////////////////////////////////////////////////////////////////////////
             /// Лекция 4
 
-            var lec4 = new MainLec4();
-            lec4.Run(); 
-            
+            /*var lec4 = new MainLec4();
+            lec4.Run(); */
+            ////////////////////////////////////////////////////////////////////////
+            /// Семинар 4
+            /// 
+            MainSem4 sem4 = new MainSem4 ();    
+            sem4.Run ();
 
 
 

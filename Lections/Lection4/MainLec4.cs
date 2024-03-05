@@ -11,11 +11,11 @@ namespace ApplicationDevelopmentInCS.Lections.Lection4
     {
         struct SomeStruct()
         {
-            public int X;
+            public int? X = 0;
         }
         class SomeClass 
         {
-            public int X;
+            public int X = 0;
         }
         /// /////////////////////////////////////////////////////////////////////
 
@@ -33,7 +33,7 @@ namespace ApplicationDevelopmentInCS.Lections.Lection4
         static object Get(object key) 
         {
             int bucketNum = key.GetHashCode() & 0x7fffffff % buckets.Length;
-            return entries[buckets[bucketNum]].Value;
+            return entries[buckets[bucketNum]].Value!;
         }
         
         /// ///////////////////////////////////////////////////////////////////////////
@@ -315,7 +315,7 @@ namespace ApplicationDevelopmentInCS.Lections.Lection4
 
             // var res = ints.OrderBy(x => x); // сортирует
 
-            // var resRevers = ints.OrderByDescending(x => x); // в обратном порядке
+            // var resRevers = ints(x => x); // в обратном порядке
 
             /*foreach (var item in res)
             {
