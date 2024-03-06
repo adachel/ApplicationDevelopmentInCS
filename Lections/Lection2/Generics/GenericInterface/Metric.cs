@@ -21,7 +21,7 @@ namespace ApplicationDevelopmentInCS.Lections.Lection2.Generics.GenericInterface
 
         public int CompareTo(object? obj)
         {
-            var metric = (Metric)obj; // приводим к одному типу
+            var metric = (Metric)obj!; // приводим к одному типу
 
             int res = this.Month.CompareTo(metric.Month); // сравниваем по месяцам
             if (res != 0)  // если месяц не равен 0

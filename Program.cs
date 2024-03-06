@@ -1,5 +1,6 @@
 ﻿using ApplicationDevelopmentInCS.HomeWorks.HomeWork2;
 using ApplicationDevelopmentInCS.HomeWorks.HomeWork3;
+using ApplicationDevelopmentInCS.HomeWorks.HomeWork4;
 using ApplicationDevelopmentInCS.Lections.Lection2.Transformation;
 using ApplicationDevelopmentInCS.Lections.Lection3;
 using ApplicationDevelopmentInCS.Lections.Lection4;
@@ -83,9 +84,13 @@ namespace ApplicationDevelopmentInCS
             ////////////////////////////////////////////////////////////////////////
             /// Семинар 4
             /// 
-            MainSem4 sem4 = new MainSem4 ();    
-            sem4.Run ();
-
+            /*MainSem4 sem4 = new MainSem4 ();    
+            sem4.Run ();*/
+            ////////////////////////////////////////////////////////////////////////
+            /// HomeWork 4
+            /// 
+            MainHW4 mainHW4 = new MainHW4 ();
+            mainHW4.Run ();
 
 
 

@@ -9,8 +9,7 @@ namespace ApplicationDevelopmentInCS.Lections.Lection3
 {
     internal class MainLec3
     {
-
-        public static void PrintBitArray(BitArray bitar)
+      public static void PrintBitArray(BitArray bitar)
         {
             foreach (var item in bitar)
             {
@@ -18,7 +17,6 @@ namespace ApplicationDevelopmentInCS.Lections.Lection3
             }
             Console.WriteLine();
         }
-
         public static bool IsCapital(string str)  // этот метод можно считать, что это пердикат
         {
             foreach (var item in str)
@@ -29,24 +27,19 @@ namespace ApplicationDevelopmentInCS.Lections.Lection3
                 }
             }
             return true;
-
         }
-
         public static bool IsIven(int num)  // предикат, определяет, четное ли число
         {
             return num % 2 == 0;
         }
-
         public static int CompareInt(int x, int y)
         {
             return x.CompareTo(y) * -1;        
         }
-
         public static bool Positive(int x)  // предикат, все элементы положительные
         {
             return (x > 0);
         }
-
         public static bool Procces(int x)
         {
             if (x % 2 == 0)
@@ -55,12 +48,10 @@ namespace ApplicationDevelopmentInCS.Lections.Lection3
             }
             return false;
         }
-
         public static void AlternativeProcces(int x) 
         {
             Console.WriteLine("Не могу обработать элемент: " + x);
         }
-
         public static IEnumerable<int> DataSourse()  // источник данных для очереди
         {
             for (int i = 0; i < 30; i++)
@@ -73,7 +64,6 @@ namespace ApplicationDevelopmentInCS.Lections.Lection3
             }
             Console.WriteLine("Завершено");
         }
-
         static bool ValidPernthesis(string str)  // определяет корректность расстановки скобок
         {
             var stack = new Stack<Char>();
@@ -89,10 +79,7 @@ namespace ApplicationDevelopmentInCS.Lections.Lection3
                 }
             }
             return stack.Count == 0;    
-
         }
-
-
         public void Run()
         {
             /////////////////////////////////////////////////

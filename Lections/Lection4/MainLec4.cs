@@ -311,7 +311,7 @@ namespace ApplicationDevelopmentInCS.Lections.Lection4
                 Console.WriteLine($"{item.Name} starts with A {item.StartsWithA}");
             }*/
 
-            // int[] ints = { 9, 1, 2, 3, 4, 5, 6 };
+            int[] ints = { 9, 1, 2, 3, 4, 5, 6 };
 
             // var res = ints.OrderBy(x => x); // сортирует
 
@@ -327,7 +327,7 @@ namespace ApplicationDevelopmentInCS.Lections.Lection4
                 Console.WriteLine(item);
             }*/
 
-            // var resAgreg = ints.Aggregate((x, y) => x - y); // в данном случае перемножает все элементы
+            // var resAgreg = ints.Aggregate((x, y) => x * y); // в данном случае перемножает все элементы
             // Console.WriteLine(resAgreg);
 
             // var resAll = ints.All(x => x > 0);  // все элем > 0?
@@ -345,7 +345,7 @@ namespace ApplicationDevelopmentInCS.Lections.Lection4
 
             // var resUni = ints.Union(new int[] { 2, 3, 12 });  // объединяет коллекциии, исключая дубликаты
 
-            // var resInter = ints.Intersect(new int[] { 2, 3}); // вщзвращает элем, кот есть в обоих коллекциях    
+            // var resInter = ints.Intersect(new int[] { 2, 3}); // вoзвращает элем, кот есть в обоих коллекциях    
 
             // var resCount = ints.Count(); // кол-во элем
             // var resCount = ints.Count(x => x % 2 == 0); // можно задавать условия предиката
