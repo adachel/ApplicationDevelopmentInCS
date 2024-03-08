@@ -82,6 +82,7 @@ namespace ApplicationDevelopmentInCS
             /// Лекция 4
 
             /*var lec4 = new MainLec4();
+<<<<<<< HEAD
             lec4.Run(); */
             ////////////////////////////////////////////////////////////////////////
             /// Семинар 4
@@ -107,6 +108,18 @@ namespace ApplicationDevelopmentInCS
              /// 
              Sem5 sem5 = new Sem5();
              sem5.Run();
+=======
+            lec4.Run();*/
+            //////////////////////////////////////////////////////////////////////////
+            ///Семинар 4
+            ///
+            var sem4 = new MainSem4();
+            sem4.Run();
+
+
+
+
+>>>>>>> work
         }
     }
 }
