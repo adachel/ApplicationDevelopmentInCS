@@ -27,7 +27,7 @@ namespace ApplicationDevelopmentInCS.Lections.Lection5
 
     public class ClassWithEvents
     {
-        public event MyEvenHandler SomeEven;
+        public event MyEvenHandler? SomeEven;
 
         protected void OnSomeEven(MyEvenArgs args)  // метод, вызывающий события
         {

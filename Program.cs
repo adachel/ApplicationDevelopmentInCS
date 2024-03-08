@@ -8,6 +8,7 @@ using ApplicationDevelopmentInCS.Lections.Lection5;
 using ApplicationDevelopmentInCS.Seminars.Seminar_3;
 using ApplicationDevelopmentInCS.Seminars.Seminar_4;
 using ApplicationDevelopmentInCS.Seminars.Seminar2;
+using ApplicationDevelopmentInCS.Seminars.Seminar4;
 using System.Runtime.CompilerServices;
 
 namespace ApplicationDevelopmentInCS
@@ -99,9 +100,13 @@ namespace ApplicationDevelopmentInCS
             mainLec5.Run();*/
             /*ExampleSensor exampleSensor = new ExampleSensor();
             exampleSensor.MainSensor();*/
-            EHandler eHandler = new EHandler();
-            eHandler.MainEHandler();
-
+            /*EHandler eHandler = new EHandler();
+            eHandler.MainEHandler();*/
+             ////////////////////////////////////////////////////////////////////////////
+             /// Семинар 5
+             /// 
+             Sem5 sem5 = new Sem5();
+             sem5.Run();
         }
     }
 }
