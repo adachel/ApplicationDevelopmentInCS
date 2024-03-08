@@ -4,6 +4,7 @@ using ApplicationDevelopmentInCS.HomeWorks.HomeWork4;
 using ApplicationDevelopmentInCS.Lections.Lection2.Transformation;
 using ApplicationDevelopmentInCS.Lections.Lection3;
 using ApplicationDevelopmentInCS.Lections.Lection4;
+using ApplicationDevelopmentInCS.Lections.Lection5;
 using ApplicationDevelopmentInCS.Seminars.Seminar_3;
 using ApplicationDevelopmentInCS.Seminars.Seminar_4;
 using ApplicationDevelopmentInCS.Seminars.Seminar2;
@@ -89,11 +90,17 @@ namespace ApplicationDevelopmentInCS
             ////////////////////////////////////////////////////////////////////////
             /// HomeWork 4
             /// 
-            MainHW4 mainHW4 = new MainHW4 ();
-            mainHW4.Run ();
-
-
-
+            /*MainHW4 mainHW4 = new MainHW4 ();
+            mainHW4.Run ();*/
+            ////////////////////////////////////////////////////////////////////////
+            /// Лекция 5. Делегаты и события
+            /// 
+            /*MainLec5 mainLec5 = new MainLec5();
+            mainLec5.Run();*/
+            /*ExampleSensor exampleSensor = new ExampleSensor();
+            exampleSensor.MainSensor();*/
+            EHandler eHandler = new EHandler();
+            eHandler.MainEHandler();
 
         }
     }
