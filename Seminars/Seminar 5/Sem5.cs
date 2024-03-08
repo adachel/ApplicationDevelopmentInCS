@@ -20,20 +20,24 @@ namespace ApplicationDevelopmentInCS.Seminars.Seminar4
             // также вывод инфо при помощи события информацию. 
 
             ICalculator calc = new Calculator();
-            Console.WriteLine(calc.Sum(7));
-            Console.WriteLine(calc.Subtraction(8));
-            Console.WriteLine(calc.Multiply(12));
-            Console.WriteLine(calc.Divide(6));
-
             calc.GotResult += Calc_GotResult; // подписываем 
-            
+            calc.Sum(12);
+            calc.Subtraction(5);
+            calc.Multiply(16);
+            calc.Divide(121);
+            calc.CancelLast();
+            calc.CancelLast();
+            calc.CancelLast();
+            calc.CancelLast();
+            calc.CancelLast();
+
             
             
         }
 
-        private void Calc_GotResult(object? sender, EventArgs e) // 
+        private void Calc_GotResult(object? sender, OperandChangedEventArgs e) // 
         {
-            Console.WriteLine(e);
+            Console.WriteLine(e.Operand);
         }
     }
 }

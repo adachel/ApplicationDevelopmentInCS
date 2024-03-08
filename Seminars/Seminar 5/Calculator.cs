@@ -8,37 +8,56 @@ namespace ApplicationDevelopmentInCS.Seminars.Seminar_5
 {
     internal class Calculator : ICalculator
     {
-        public event EventHandler<EventArgs>? GotResult;
-        private double result = 0;
+        public event EventHandler<OperandChangedEventArgs>? GotResult;
+        // private double result = 0;
+        private Stack<double> stack = new Stack<double>(); // ++
 
-        class ResultEvenArgs
+        // public double Result { get => result; set { result = value; RaiseResult(); } }
+        public double Result 
         {
-            public double Result { get; set; }
+            get
+            {
+                return stack.Count() == 0 ? 0 : stack.Peek(); // если stack.Count() == 0 то возвр 0 иначе stack.Peek()
+            }
+            set 
+            { 
+                stack.Push(value); 
+                RaiseEvent(); 
+            } 
+        } // ++
+
+        public void RaiseEvent()
+        {
+            GotResult?.Invoke(this, new OperandChangedEventArgs(Result));
         }
 
-        public void RaiseResult()
-        { 
-            
+        public void CancelLast()
+        {
+            if (stack.Count > 0)
+            {
+                stack.Pop();
+                RaiseEvent();
+            }
         }
 
-        public double Divide(double number)
+        public void Divide(double number)
         {
-            return result = result / number;
+            Result /= number;
         }
 
-        public double Multiply(double number)
+        public void Multiply(double number)
         {
-            return result = result * number;
+            Result *= number;
         }
 
-        public double Subtraction(double number)
+        public void Subtraction(double number)
         {
-            return result -= number;
+            Result -= number;
         }
 
-        public double Sum(double number)
+        public void Sum(double number)
         {
-            return result += number;
+            Result += number;
         }
     }
 }
