@@ -18,35 +18,7 @@ namespace ApplicationDevelopmentInCS.Lections.Lection5
 
     delegate void MyAction<in T>(T x);
 
-    // События
-    public class MyEvenArgs : EventArgs // EventArgs - спец класс для событий
-    {
-        public string? Message { get; set; }
-    }
     public delegate void MyEvenHandler(object sender, MyEvenArgs myEvenArgs); // создаем делегат, кот будем исп как событие
-
-    public class ClassWithEvents
-    {
-        public event MyEvenHandler? SomeEven;
-
-        protected void OnSomeEven(MyEvenArgs args)  // метод, вызывающий события
-        {
-            SomeEven?.Invoke(this, args);
-        }
-
-        public void DoSomeWork() // метод, генерирующий события
-        {
-            new Thread
-                (
-                    () =>
-                    {
-                        Thread.Sleep(10000);
-                        OnSomeEven(new MyEvenArgs { Message = "Все" });
-                    }
-                ).Start();
-        }
-    }
-
 
     internal class MainLec5
     {
@@ -62,25 +34,11 @@ namespace ApplicationDevelopmentInCS.Lections.Lection5
 
         // Переменные делегатов, имеющих одинаковую сигнатуру, но относящиеся к разным классам не могут складываться
 
-       static void SayHello()
-        {
-            Console.WriteLine("Привет, я делегат");
-        }
+        static void SayHello() => Console.WriteLine("Привет, я делегат");
+        static void SayPoka() => Console.WriteLine("Пока");
+        static void ForAnotherDelegate(string s) => Console.WriteLine("Привет, я " + s);
 
-        static void SayPoka() 
-        {
-            Console.WriteLine("Пока");
-        }
-
-        static void ForAnotherDelegate(string s)
-        {
-            Console.WriteLine("Привет, я " + s);
-        }
-
-        static string ForMyGenericDelegate(string s)
-        {
-            return  $"Меня зовут {s}";
-        }
+        static string ForMyGenericDelegate(string s) { return  $"Меня зовут {s}"; }
 
         static string DigitToRoman(int x) 
         {
@@ -100,10 +58,7 @@ namespace ApplicationDevelopmentInCS.Lections.Lection5
             }
         }
 
-        static bool IsEven(int x)
-        {
-            return (x % 2) == 0;
-        }
+        static bool IsEven(int x) { return (x % 2) == 0; }
 
         static void SomeMethodObject(object o)
         {

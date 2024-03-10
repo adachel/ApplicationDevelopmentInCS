@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ApplicationDevelopmentInCS.Seminars.Seminar_5
 {
-    public class OperandChangedEventArgs(double operand) : EventArgs
+    class OperandChangedEventArgs(double operand) : EventArgs
     {
         public double Operand => operand;
     }

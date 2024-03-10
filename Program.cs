@@ -1,12 +1,14 @@
 ﻿using ApplicationDevelopmentInCS.HomeWorks.HomeWork2;
 using ApplicationDevelopmentInCS.HomeWorks.HomeWork3;
 using ApplicationDevelopmentInCS.HomeWorks.HomeWork4;
+using ApplicationDevelopmentInCS.HomeWorks.HomeWork5;
 using ApplicationDevelopmentInCS.Lections.Lection2.Transformation;
 using ApplicationDevelopmentInCS.Lections.Lection3;
 using ApplicationDevelopmentInCS.Lections.Lection4;
 using ApplicationDevelopmentInCS.Lections.Lection5;
 using ApplicationDevelopmentInCS.Seminars.Seminar_3;
 using ApplicationDevelopmentInCS.Seminars.Seminar_4;
+using ApplicationDevelopmentInCS.Seminars.Seminar_5;
 using ApplicationDevelopmentInCS.Seminars.Seminar2;
 using ApplicationDevelopmentInCS.Seminars.Seminar4;
 using System.Runtime.CompilerServices;
@@ -106,12 +108,17 @@ namespace ApplicationDevelopmentInCS
             /*EHandler eHandler = new EHandler();
             eHandler.MainEHandler();*/
 
-             ////////////////////////////////////////////////////////////////////////////
-             /// Семинар 5
-             /// 
-             Sem5 sem5 = new Sem5();
-             sem5.Run();
+            ////////////////////////////////////////////////////////////////////////////
+            /// Семинар 5
+            /// 
+            /*Sem5 sem5 = new Sem5();
+            sem5.Run();*/
 
+            //////////////////////////////////////////////////////////////////////////////
+            /// HomeWork 5
+            /// 
+            MainHW5 mainHW5 = new MainHW5();
+            mainHW5.Run();
         }
     }
 }

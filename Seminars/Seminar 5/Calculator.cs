@@ -9,6 +9,7 @@ namespace ApplicationDevelopmentInCS.Seminars.Seminar_5
     internal class Calculator : ICalculator
     {
         public event EventHandler<OperandChangedEventArgs>? GotResult;
+
         // private double result = 0;
         private Stack<double> stack = new Stack<double>(); // ++
 
@@ -21,7 +22,7 @@ namespace ApplicationDevelopmentInCS.Seminars.Seminar_5
             }
             set 
             { 
-                stack.Push(value); 
+                stack.Push(value); //  Push - добавление в стэк. value - некая переменная, работает с set, для изменения свойства
                 RaiseEvent(); 
             } 
         } // ++
