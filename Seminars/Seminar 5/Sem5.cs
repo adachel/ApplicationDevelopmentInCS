@@ -21,16 +21,7 @@ namespace ApplicationDevelopmentInCS.Seminars.Seminar4
 
             ICalculator calc = new Calculator();
             calc.GotResult += Calc_GotResult; // подписываем 
-            calc.Sum(12);
-            calc.Subtraction(5);
-            calc.Multiply(16);
-            calc.Divide(121);
-            calc.CancelLast();
-            calc.CancelLast();
-            calc.CancelLast();
-            calc.CancelLast();
-            calc.CancelLast();
-
+            
             
             
         }
