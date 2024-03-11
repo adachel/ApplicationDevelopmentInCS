@@ -6,6 +6,7 @@ using ApplicationDevelopmentInCS.Lections.Lection2.Transformation;
 using ApplicationDevelopmentInCS.Lections.Lection3;
 using ApplicationDevelopmentInCS.Lections.Lection4;
 using ApplicationDevelopmentInCS.Lections.Lection5;
+using ApplicationDevelopmentInCS.Lections.Lection6;
 using ApplicationDevelopmentInCS.Seminars.Seminar_3;
 using ApplicationDevelopmentInCS.Seminars.Seminar_4;
 using ApplicationDevelopmentInCS.Seminars.Seminar_5;
@@ -117,8 +118,14 @@ namespace ApplicationDevelopmentInCS
             //////////////////////////////////////////////////////////////////////////////
             /// HomeWork 5
             /// 
-            MainHW5 mainHW5 = new MainHW5();
-            mainHW5.Run();
+            /*MainHW5 mainHW5 = new MainHW5();
+            mainHW5.Run();*/
+
+            //////////////////////////////////////////////////////////////////////////////
+            /// Лекция 6
+            /// 
+            MainLec6 mainLec6 = new MainLec6();
+            mainLec6.Run();
         }
     }
 }
