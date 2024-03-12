@@ -12,6 +12,10 @@ namespace ApplicationDevelopmentInCS.HomeWorks.HomeWork5
         {
             var menu = new Menu();
             menu.RunMenu();
+
+
+
+
         }
     }
 }

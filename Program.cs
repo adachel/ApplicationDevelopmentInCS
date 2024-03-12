@@ -15,10 +15,20 @@ using System.Runtime.CompilerServices;
 
 namespace ApplicationDevelopmentInCS
 {
+    delegate void MyDeleg();
+
+
+
+
     partial class Program  // partial - для него можно делать реализацию в отдельном файле. Если метод partial - то же самое
     {
         static void Main(string[] args)
         {
+            MyDeleg();
+
+
+
+
             /////////////////////////////////////////////////////////////// 
             /*// Лекция 1
             var lec1 = new MethodsMeinLection1();
@@ -117,8 +127,16 @@ namespace ApplicationDevelopmentInCS
             //////////////////////////////////////////////////////////////////////////////
             /// HomeWork 5
             /// 
-            MainHW5 mainHW5 = new MainHW5();
-            mainHW5.Run();
+            /*MainHW5 mainHW5 = new MainHW5();
+            mainHW5.Run();*/
+
+            //////////////////////////////////////////////////////////////////////////////
+            ///
+
+
+
+
+
         }
     }
 }
