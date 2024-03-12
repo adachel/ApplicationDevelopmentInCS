@@ -2,6 +2,7 @@
 using ApplicationDevelopmentInCS.HomeWorks.HomeWork3;
 using ApplicationDevelopmentInCS.HomeWorks.HomeWork4;
 using ApplicationDevelopmentInCS.HomeWorks.HomeWork5;
+using ApplicationDevelopmentInCS.HomeWorks.HomeWork6;
 using ApplicationDevelopmentInCS.Lections.Lection2.Transformation;
 using ApplicationDevelopmentInCS.Lections.Lection3;
 using ApplicationDevelopmentInCS.Lections.Lection4;
@@ -131,9 +132,14 @@ namespace ApplicationDevelopmentInCS
             //////////////////////////////////////////////////////////////////////////////////////
             /// Семинар 6. Исключения
             /// 
-            MainSem6 mainSem6 = new MainSem6();
-            mainSem6.Run();
+            /*MainSem6 mainSem6 = new MainSem6();
+            mainSem6.Run();*/
 
+            ////////////////////////////////////////////////////////////////////////////////////////
+            /// HomeWork 6. Exeption
+            /// 
+            MainHW6 mainHW6 = new MainHW6();
+            mainHW6.Run();
         }
     }
 }
