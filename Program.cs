@@ -10,26 +10,17 @@ using ApplicationDevelopmentInCS.Lections.Lection6;
 using ApplicationDevelopmentInCS.Seminars.Seminar_3;
 using ApplicationDevelopmentInCS.Seminars.Seminar_4;
 using ApplicationDevelopmentInCS.Seminars.Seminar_5;
+using ApplicationDevelopmentInCS.Seminars.Seminar_6;
 using ApplicationDevelopmentInCS.Seminars.Seminar2;
 using ApplicationDevelopmentInCS.Seminars.Seminar4;
 using System.Runtime.CompilerServices;
 
 namespace ApplicationDevelopmentInCS
 {
-    delegate void MyDeleg();
-
-
-
-
     partial class Program  // partial - для него можно делать реализацию в отдельном файле. Если метод partial - то же самое
     {
         static void Main(string[] args)
         {
-            MyDeleg();
-
-
-
-
             /////////////////////////////////////////////////////////////// 
             /*// Лекция 1
             var lec1 = new MethodsMeinLection1();
@@ -132,19 +123,17 @@ namespace ApplicationDevelopmentInCS
             mainHW5.Run();*/
 
             //////////////////////////////////////////////////////////////////////////////
-<<<<<<< HEAD
-            ///
-
-
-
-
-
-=======
             /// Лекция 6
             /// 
-            MainLec6 mainLec6 = new MainLec6();
-            mainLec6.Run();
->>>>>>> work
+            /*MainLec6 mainLec6 = new MainLec6();
+            mainLec6.Run();*/
+
+            //////////////////////////////////////////////////////////////////////////////////////
+            /// Семинар 6. Исключения
+            /// 
+            MainSem6 mainSem6 = new MainSem6();
+            mainSem6.Run();
+
         }
     }
 }
