@@ -1,20 +1,4 @@
-﻿using ApplicationDevelopmentInCS.HomeWorks.HomeWork2;
-using ApplicationDevelopmentInCS.HomeWorks.HomeWork3;
-using ApplicationDevelopmentInCS.HomeWorks.HomeWork4;
-using ApplicationDevelopmentInCS.HomeWorks.HomeWork5;
-using ApplicationDevelopmentInCS.HomeWorks.HomeWork6;
-using ApplicationDevelopmentInCS.Lections.Lection2.Transformation;
-using ApplicationDevelopmentInCS.Lections.Lection3;
-using ApplicationDevelopmentInCS.Lections.Lection4;
-using ApplicationDevelopmentInCS.Lections.Lection5;
-using ApplicationDevelopmentInCS.Lections.Lection6;
-using ApplicationDevelopmentInCS.Seminars.Seminar_3;
-using ApplicationDevelopmentInCS.Seminars.Seminar_4;
-using ApplicationDevelopmentInCS.Seminars.Seminar_5;
-using ApplicationDevelopmentInCS.Seminars.Seminar_6;
-using ApplicationDevelopmentInCS.Seminars.Seminar2;
-using ApplicationDevelopmentInCS.Seminars.Seminar4;
-using System.Runtime.CompilerServices;
+﻿using ApplicationDevelopmentInCS.Seminars.Seminar7;
 
 namespace ApplicationDevelopmentInCS
 {
@@ -138,8 +122,14 @@ namespace ApplicationDevelopmentInCS
             ////////////////////////////////////////////////////////////////////////////////////////
             /// HomeWork 6. Exeption
             /// 
-            MainHW6 mainHW6 = new MainHW6();
-            mainHW6.Run();
+            /*MainHW6 mainHW6 = new MainHW6();
+            mainHW6.Run();*/
+
+            ///////////////////////////////////////////////////////////////////////////////////////
+            /// Seminar 7. Reflex
+            /// 
+            MainSem7 mainSem7 = new MainSem7();
+            mainSem7.Run();
         }
     }
 }
