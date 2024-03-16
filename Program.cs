@@ -1,3 +1,4 @@
+using ApplicationDevelopmentInCS.Seminars.Seminar7;
 ﻿using ApplicationDevelopmentInCS.HomeWorks.HomeWork2;
 using ApplicationDevelopmentInCS.HomeWorks.HomeWork3;
 using ApplicationDevelopmentInCS.HomeWorks.HomeWork4;
@@ -143,6 +144,7 @@ namespace ApplicationDevelopmentInCS
             mainHW6.Run();*/
 
             ///////////////////////////////////////////////////////////////////////////////////////
+
             /// Лекция 7. Рефлексия
             /// 
             MainLec7 mainLec7 = new MainLec7();
