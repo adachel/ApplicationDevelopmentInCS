@@ -70,6 +70,7 @@ namespace ApplicationDevelopmentInCS.Seminars.Seminar7
             var properties = type.GetProperties(); // создали переменную со свойствами
             foreach (var item in properties)  // перебираем свойства и записываем в sb
             {
+                if (item.GetCustomAttribute<DontSaveForTask3Attribute>() != null) continue;
                 sb.Append(item.Name + "="); // Название свойства
                 var val = item.GetValue(o);   // Значение свойства
 
@@ -149,7 +150,7 @@ namespace ApplicationDevelopmentInCS.Seminars.Seminar7
             var properties = type.GetProperties(); // создали переменную со свойствами
             foreach (var item in properties)  // перебираем свойства и записываем в sb имя и значение свойства через =
             {
-                if (item.GetCustomAttribute<DontSaveForTask3Atribute>() != null) continue;  // для task3.
+                if (item.GetCustomAttribute<DontSaveForTask3Attribute>() != null) continue;  // для task3.
                                                                                             // Eсли есть помеченый атрибут, его не трогаем
                 sb.Append(item.Name + "="); // Название свойства
                 var val = item.GetValue(o);   // Значение свойства
@@ -176,13 +177,13 @@ namespace ApplicationDevelopmentInCS.Seminars.Seminar7
             // TestClass testClass = new TestClass();
             Type typeTask2 = typeof(TestClass);
             var t3 = Activator.CreateInstance(typeTask2, [10, "Hello", 10.05m, new char[] { 'A', 'B', 'C' }]);
+            // Console.WriteLine(t3);
+
             string task2 = ObjectToStringForTask2(t3!);
-            //Console.WriteLine(task2);
+            Console.WriteLine(task2);
 
             var task21 = StringToObjectForTask2(task2);
-
-            var task3 = ObjectToStringForTask3(t3!);
-
+            // Console.WriteLine(task21);
         }
     }
 }

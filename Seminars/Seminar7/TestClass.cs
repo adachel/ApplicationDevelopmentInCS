@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -11,9 +12,11 @@ namespace ApplicationDevelopmentInCS.Seminars.Seminar7
         
         public int I { get; set; }
 
-        [DontSaveForTask3Atribute] // из task3. Свойство не должно подлежать сохранению.
+        [DontSaveForTask3] // из task3. Свойство не должно подлежать сохранению.
         public string? S { get; set; }
         public decimal D { get; set; }
+
+        
         public char[]? C { get; set; }
 
         public TestClass()
@@ -30,6 +33,11 @@ namespace ApplicationDevelopmentInCS.Seminars.Seminar7
             S = s;
             D = d;
             C = c;
+        }
+
+        public override string? ToString()
+        {
+            return $"I = {I};\nS = {S};\nD = {D};\nCh = {String.Concat<char>(C)}";
         }
     }
 }

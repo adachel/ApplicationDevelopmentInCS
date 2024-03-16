@@ -7,9 +7,9 @@ using System.Threading.Tasks;
 namespace ApplicationDevelopmentInCS.Seminars.Seminar7
 {
     [AttributeUsage(AttributeTargets.Property)] // для управления атрибутами свойств класса
-    internal class DontSaveForTask3Atribute : Attribute
+    internal class DontSaveForTask3Attribute : Attribute
     {
-        public DontSaveForTask3Atribute()
+        public DontSaveForTask3Attribute()
         {
         }
     }

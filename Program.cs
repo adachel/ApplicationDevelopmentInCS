@@ -17,6 +17,8 @@ using ApplicationDevelopmentInCS.Seminars.Seminar_6;
 using ApplicationDevelopmentInCS.Seminars.Seminar2;
 using ApplicationDevelopmentInCS.Seminars.Seminar4;
 using System.Runtime.CompilerServices;
+using ApplicationDevelopmentInCS.HomeWorks.HomeWork7;
+using ApplicationDevelopmentInCS.Seminars.Seminar7.Temp;
 
 namespace ApplicationDevelopmentInCS
 {
@@ -147,8 +149,24 @@ namespace ApplicationDevelopmentInCS
 
             /// Лекция 7. Рефлексия
             /// 
-            MainLec7 mainLec7 = new MainLec7();
-            mainLec7.Run(); 
+            /*MainLec7 mainLec7 = new MainLec7();
+            mainLec7.Run(); */
+
+            ///////////////////////////////////////////////////////////////////////////////////////////
+            /// Семинар 7. Рефлексия
+            /// 
+            /*MainSem7 mainSem7 = new MainSem7();
+            mainSem7.Run();*/
+
+            //////////////////////////////////////////////////////////////////////////////////////////
+            /// HomeWork 7. Рефлексия
+            /// 
+            MainHW7 mainHW7 = new MainHW7();
+            mainHW7.Run();
+
+            /*Prog prog = new Prog();
+            prog.MainTemp();*/
+
         }
     }
 }

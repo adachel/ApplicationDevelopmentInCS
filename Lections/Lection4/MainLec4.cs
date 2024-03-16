@@ -13,7 +13,7 @@ namespace ApplicationDevelopmentInCS.Lections.Lection4
         {
             public int? X = 0;
         }
-        class SomeClass 
+        class SomeClass
         {
             public int X = 0;
         }
@@ -30,14 +30,14 @@ namespace ApplicationDevelopmentInCS.Lections.Lection4
             entries[c].Value = value;
             c++;
         }
-        static object Get(object key) 
+        static object Get(object key)
         {
             int bucketNum = key.GetHashCode() & 0x7fffffff % buckets.Length;
             return entries[buckets[bucketNum]].Value!;
         }
-        
+
         /// ///////////////////////////////////////////////////////////////////////////
-        
+
 
         public void Run()
         {
@@ -363,9 +363,9 @@ namespace ApplicationDevelopmentInCS.Lections.Lection4
 
             var resConcat = ints.Concat(ints); // объединяет коллекции*/
 
-            var intss = new List<int>{ 1, 2, 3, 4};
-            var chars = new List<char>{ 'a', 'b', 'c', 'd'};
-            
+            var intss = new List<int> { 1, 2, 3, 4 };
+            var chars = new List<char> { 'a', 'b', 'c', 'd' };
+
             /*var res = intss.Zip(chars, (i, c) => $"{i} = {c}"); // объеденили. Только совпадающие по кол-ву, остальных не будет, ошибки не будет.
             foreach (var item in res)
             {
@@ -387,4 +387,4 @@ namespace ApplicationDevelopmentInCS.Lections.Lection4
             }
         }
     }
-} 
+}
