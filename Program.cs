@@ -8,6 +8,7 @@ using ApplicationDevelopmentInCS.Lections.Lection3;
 using ApplicationDevelopmentInCS.Lections.Lection4;
 using ApplicationDevelopmentInCS.Lections.Lection5;
 using ApplicationDevelopmentInCS.Lections.Lection6;
+using ApplicationDevelopmentInCS.Lections.Lection7;
 using ApplicationDevelopmentInCS.Seminars.Seminar_3;
 using ApplicationDevelopmentInCS.Seminars.Seminar_4;
 using ApplicationDevelopmentInCS.Seminars.Seminar_5;
@@ -138,8 +139,14 @@ namespace ApplicationDevelopmentInCS
             ////////////////////////////////////////////////////////////////////////////////////////
             /// HomeWork 6. Exeption
             /// 
-            MainHW6 mainHW6 = new MainHW6();
-            mainHW6.Run();
+            /*MainHW6 mainHW6 = new MainHW6();
+            mainHW6.Run();*/
+
+            ///////////////////////////////////////////////////////////////////////////////////////
+            /// Лекция 7. Рефлексия
+            /// 
+            MainLec7 mainLec7 = new MainLec7();
+            mainLec7.Run(); 
         }
     }
 }
