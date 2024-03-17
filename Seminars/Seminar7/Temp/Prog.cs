@@ -13,8 +13,6 @@ namespace ApplicationDevelopmentInCS.Seminars.Seminar7.Temp
         {
             string[] arrayInfo = s.Split("\n");
 
-            Console.WriteLine($"{arrayInfo[0]} - {arrayInfo[1]}");
-
             var t4 = Activator.CreateInstance(null, arrayInfo[1])?.Unwrap();
 
             //TODO: Сделать так, чтобы и поле можно было обрабатывать

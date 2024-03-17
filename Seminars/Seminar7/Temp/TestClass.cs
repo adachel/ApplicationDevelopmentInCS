@@ -48,9 +48,9 @@ namespace ApplicationDevelopmentInCS.Seminars.Seminar7.Temp
 
 
 
-        public override string? ToString()
+        /*public override string? ToString()
         {
             return $"I = {I};\nS = {S};\nD = {D};\nCh = {QWE(C)}";
-        }
+        }*/
     }
 }

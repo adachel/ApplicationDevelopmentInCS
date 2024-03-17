@@ -164,9 +164,6 @@ namespace ApplicationDevelopmentInCS
             MainHW7 mainHW7 = new MainHW7();
             mainHW7.Run();
 
-            /*Prog prog = new Prog();
-            prog.MainTemp();*/
-
         }
     }
 }

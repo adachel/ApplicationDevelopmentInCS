@@ -9,18 +9,22 @@ namespace ApplicationDevelopmentInCS.HomeWorks.HomeWork7
     internal class ClassHW7
     {
 
- 
-        // [CustomNameHW7("CustomFieldName")]
-        public string fieldClass;
+
+        [CustomNameHW7("AnotherName")]
+        public string fff;
+
+        // [CustomNameHW7("oooooooooooo")]
+        public int iii;
+
 
         public int I {  get; set; }
         public string? S { get; set; }
 
-        
+        [DontSaveHW7] 
         public decimal D { get; set; }
 
-        [DontSaveHW7] 
-        public char[]? Chars { get; set; } = null;
+        
+        public char[]? Chars { get; set; } = new char[] {};
 
         public ClassHW7()
         {
@@ -37,28 +41,28 @@ namespace ApplicationDevelopmentInCS.HomeWorks.HomeWork7
             Chars = chars;
         }
 
-        public ClassHW7(string fieldClass, int i, string? s, decimal d, char[]? chars)
+        public ClassHW7(string fff, int i, string? s, decimal d, char[]? chars)
         {
-            this.fieldClass = fieldClass;
+            this.fff = fff;
             I = i;
             S = s;
             D = d;
             Chars = chars;
         }
 
-        /*private string QWE(char[] ch)
+        public ClassHW7(string fff, int iii, int i, string? s, decimal d, char[]? chars)
         {
-            if (ch == null)
-            {
-                return "null";
-            }
-            else return String.Concat<char>(ch);
+            this.fff = fff;
+            this.iii = iii;
+            I = i;
+            S = s;
+            D = d;
+            Chars = chars;
         }
-
 
         public override string? ToString()
         {
-            return $"fieldClass = {fieldClass};\nI = {I};\nS = {S};\nD = {D};\nCh = {QWE(Chars)}";
-        }*/
+            return $"fff : {fff}; \niii : {iii}; \nI = {I}; \nS = {S}; \nD = {D}; \nCh = {String.Concat<char>(Chars)}";
+        }
     }
 }

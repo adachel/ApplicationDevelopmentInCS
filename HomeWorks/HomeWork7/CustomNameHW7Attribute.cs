@@ -9,7 +9,7 @@ namespace ApplicationDevelopmentInCS.HomeWorks.HomeWork7
     [AttributeUsage(AttributeTargets.Field)]
     internal class CustomNameHW7Attribute : Attribute
     {
-        public string? CustomName { get; set; }
+        public string? CustomName { get; private set; }
 
         public CustomNameHW7Attribute(string? name)
         {
