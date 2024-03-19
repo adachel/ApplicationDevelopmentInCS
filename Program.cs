@@ -19,6 +19,7 @@ using ApplicationDevelopmentInCS.Seminars.Seminar4;
 using System.Runtime.CompilerServices;
 using ApplicationDevelopmentInCS.HomeWorks.HomeWork7;
 using ApplicationDevelopmentInCS.Seminars.Seminar7.Temp;
+using ApplicationDevelopmentInCS.Lections.Lection8;
 
 namespace ApplicationDevelopmentInCS
 {
@@ -161,8 +162,15 @@ namespace ApplicationDevelopmentInCS
             //////////////////////////////////////////////////////////////////////////////////////////
             /// HomeWork 7. Рефлексия
             /// 
-            MainHW7 mainHW7 = new MainHW7();
-            mainHW7.Run();
+            /*MainHW7 mainHW7 = new MainHW7();
+            mainHW7.Run();*/
+
+            ////////////////////////////////////////////////////////////////////////////////////////////
+            /// Лекция 8. Потоки и буферизация
+            /// 
+            MainLec8 mainLec8 = new MainLec8();
+            mainLec8.Run(); 
+
 
         }
     }
