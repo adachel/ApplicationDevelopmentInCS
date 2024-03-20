@@ -1,0 +1,9 @@
+{
+  "profiles": {
+    "ApplicationDevelopmentInCS": {
+      "commandName": "Project",
+      "commandLineArgs": "\"D:\\Works\\IT\\file2.txt\"  деньги ",
+      "workingDirectory": "D:\\Works\\IT\\Education\\2 quarter\\ApplicationDevelopmentInCS\\Seminars\\Seminar8"
+    }
+  }
+}

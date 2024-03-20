@@ -8,8 +8,8 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Seminars\Seminar1\Controllers\" />
-    <Folder Include="Seminars\Seminar1\View\" />
+    <Folder Include="Seminars\Seminar 1\Controllers\" />
+    <Folder Include="Seminars\Seminar 1\View\" />
   </ItemGroup>
 
   <ItemGroup>
