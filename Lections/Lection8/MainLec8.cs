@@ -22,13 +22,13 @@ namespace ApplicationDevelopmentInCS.Lections.Lection8
             while (names.Count > 0)
             {
                 var expected = names.Pop();
-                if (di.Name == expected)
+                if (di?.Name == expected)
                 {
-                    di = di.Parent;
+                    di = di.Parent!;
                 }
                 else
                 {
-                    return null;
+                    return null!;
                 }
             }
             return di;
@@ -555,7 +555,7 @@ namespace ApplicationDevelopmentInCS.Lections.Lection8
 
             using (var bw = new BinaryWriter(new FileStream(fname, FileMode.Append))) // записываем
             {
-                long l = 100l;
+                long l = 100L;
                 int i = -99;
                 byte b = 1;
                 bool flag = false;

@@ -18,8 +18,8 @@ namespace ApplicationDevelopmentInCS.Seminars.Seminar_8
             /*Task2 task2 = new Task2();
             task2.ViewFile(args[0], args[1]);*/
 
-            Task3 task3 = new Task3();
-            task3.GetWord(args[0], args[1]);
+            /*Task3 task3 = new Task3();
+            task3.GetWord(args[0], args[1]);*/
         }
     }
 }
