@@ -22,6 +22,7 @@ using ApplicationDevelopmentInCS.Seminars.Seminar7.Temp;
 using ApplicationDevelopmentInCS.Lections.Lection8;
 using ApplicationDevelopmentInCS.Seminars.Seminar_8;
 using ApplicationDevelopmentInCS.HomeWorks.HomeWork8;
+using ApplicationDevelopmentInCS.Lections.Lection9;
 
 namespace ApplicationDevelopmentInCS
 {
@@ -182,8 +183,14 @@ namespace ApplicationDevelopmentInCS
             ////////////////////////////////////////////////////////////////////////////////////////////
             /// HomeWork 8
             /// 
-            HomeWork8 homeWork8 = new HomeWork8();
-            homeWork8.Run(args[0], args[1], args[2]);
+            /*HomeWork8 homeWork8 = new HomeWork8();
+            homeWork8.Run(args[0], args[1], args[2]);*/
+
+            ///////////////////////////////////////////////////////////////////////////////////////////
+            /// Лекция 9
+            /// 
+            MainLec9 mainLec9 = new MainLec9();
+            mainLec9.Run(); 
         }
     }
 }

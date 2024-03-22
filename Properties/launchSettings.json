@@ -2,7 +2,7 @@
   "profiles": {
     "ApplicationDevelopmentInCS": {
       "commandName": "Project",
-      "commandLineArgs": "D:\\Works\\IT *.txt деньги",
+      "commandLineArgs": "D:\\Works\\IT *.txt GITHUB",
       "workingDirectory": "D:\\Works\\IT\\RepositoryCS\\ApplicationDevelopmentInCS"
     }
   }
