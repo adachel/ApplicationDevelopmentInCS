@@ -23,6 +23,7 @@ using ApplicationDevelopmentInCS.Lections.Lection8;
 using ApplicationDevelopmentInCS.Seminars.Seminar_8;
 using ApplicationDevelopmentInCS.HomeWorks.HomeWork8;
 using ApplicationDevelopmentInCS.Lections.Lection9;
+using ApplicationDevelopmentInCS.Seminars.Seminar9;
 
 namespace ApplicationDevelopmentInCS
 {
@@ -189,8 +190,14 @@ namespace ApplicationDevelopmentInCS
             ///////////////////////////////////////////////////////////////////////////////////////////
             /// Лекция 9
             /// 
-            MainLec9 mainLec9 = new MainLec9();
-            mainLec9.Run(); 
+            //MainLec9 mainLec9 = new MainLec9();
+            //mainLec9.Run(); 
+
+            ///////////////////////////////////////////////////////////////////////////////////////////
+            /// семинар 9. Сериализация
+            /// 
+            MainSem9 mainSem9 = new MainSem9();
+            mainSem9.Run(); 
         }
     }
 }
