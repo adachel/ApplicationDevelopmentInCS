@@ -26,7 +26,7 @@ namespace ApplicationDevelopmentInCS.HomeWorks.HomeWork9
             }
         }
 
-        private static void JsonToXml(JsonElement jsonElement, XmlElement xmlElement)
+        private void JsonToXml(JsonElement jsonElement, XmlElement xmlElement)
         {
             foreach (JsonProperty property in jsonElement.EnumerateObject())
             {
