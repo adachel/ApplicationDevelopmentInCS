@@ -1,0 +1,30 @@
+<root>
+  <Current>
+    <Time>2023-06-18T20:35:06.722127+04:00</Time>
+    <Temperature>29</Temperature>
+    <Weathercode>1</Weathercode>
+    <Windspeed>2.1</Windspeed>
+    <Winddirection>1</Winddirection>
+  </Current>
+  <History>
+    <Time>2023-06-17T20:35:06.77707+04:00</Time>
+    <Temperature>29</Temperature>
+    <Weathercode>2</Weathercode>
+    <Windspeed>2.4</Windspeed>
+    <Winddirection>1</Winddirection>
+  </History>
+  <History>
+    <Time>2023-06-16T20:35:06.777081+04:00</Time>
+    <Temperature>22</Temperature>
+    <Weathercode>2</Weathercode>
+    <Windspeed>2.4</Windspeed>
+    <Winddirection>1</Winddirection>
+  </History>
+  <History>
+    <Time>2023-06-15T20:35:06.777082+04:00</Time>
+    <Temperature>21</Temperature>
+    <Weathercode>4</Weathercode>
+    <Windspeed>2.2</Windspeed>
+    <Winddirection>1</Winddirection>
+  </History>
+</root>
